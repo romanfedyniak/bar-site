@@ -1,0 +1,153 @@
+html,
+body {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-width: 415px;
+}
+
+.main-content {
+    display: block;
+    max-width: 1180px;
+    margin-bottom: 150px;
+}
+
+body {
+    background-color: #515151;
+}
+
+h2 {
+    margin-top: 150px;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-content {
+    color: #b3aa93;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content div:first-child {
+    margin-top: 150px;
+}
+
+.main-content img {
+    width: 250px;
+}
+
+.leftimg {
+    float:left;
+    margin: 7px 7px 7px 0;
+}
+
+.rightimg  {
+    float: right;
+    margin: 7px 0 7px 7px;
+}
+
+form textarea {
+    width: 60%;
+    height: 50px;
+    resize: none;
+    border-radius: 15px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: #b3aa93;
+    display: block;
+}
+
+.btn-form {
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    background-color: #176db43d;
+    color: #b3aa93;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.7s;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+
+.btn-form li:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.input {
+    width: 60%;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #b3aa93;
+    display: block;
+}
+
+.comments {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 40%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.comments p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #b3aa93;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline;
+    text-align: center;
+    width: calc(60% - 20px);
+ 
+}
+
+.menu-item .caption {
+    color: #f2fa00;
+}
+
+.menu-item .price {
+    color: #ffffff;
+}
+
+.menu-item .mini-description {
+    color: #aaaaaa;
+}
+
+.menu-item img {
+    margin: 0 10px 10px 0;
+    display: inline-block;
+}
+
+.dish-description {
+    margin: 0 10px 10px 0;
+    padding: 10px 0;
+    width: 25%;
+    min-width: 220px;
+    display: inline-block;
+    border: 1px solid #000000;
+    background-color: #686868;
+}
+
+

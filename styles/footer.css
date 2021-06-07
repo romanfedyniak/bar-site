@@ -10,11 +10,12 @@ footer {
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
+    background-color: #414245;
+
 }
 
 footer .container {
-    padding: 10px;
-    background-color: #414245;
+    margin-top: 9px;
 }
 
 footer a {
@@ -27,4 +28,19 @@ footer a {
 footer img {
     width: 32px;
     height: 32px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: 40px;
+    }
+
+    footer img {
+        width: 28px;
+        height: 28px;
+    }
+
+    footer .container {
+        margin-top: 6px;
+    }
 }

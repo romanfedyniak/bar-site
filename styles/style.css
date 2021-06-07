@@ -10,7 +10,6 @@ body {
 .main-content {
     display: block;
     max-width: 1180px;
-    margin-bottom: 150px;
 }
 
 body {
@@ -29,6 +28,10 @@ h2 {
     color: #b3aa93;
     margin-left: auto;
     margin-right: auto;
+}
+
+.main-content .menu-item:last-child {
+    margin-bottom: 150px;
 }
 
 .main-content div:first-child {
@@ -105,7 +108,7 @@ form textarea {
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    width: 40%;
+    max-width: 60%;
     height: 80%;
     border-radius: 20px;
 }
@@ -116,11 +119,15 @@ form textarea {
     text-align: center;
 }
 
+.menu-container {
+    display: table;
+    min-width: 512px;
+}
+
 .menu-item {
     display: inline;
     text-align: center;
-    width: calc(60% - 20px);
- 
+    width: calc(60% - 20px); 
 }
 
 .menu-item .caption {
@@ -150,4 +157,109 @@ form textarea {
     background-color: #686868;
 }
 
+.event-item {
+    display: inline-block;
+    height: 257px;
+    width: 393px;
+    background-color: #aaaaaa;
+}
 
+.events-caption {
+    display: block;
+    color: #f2fa00;
+}
+
+.event-item .event-header {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #000000;
+    margin-block-end: 0;
+}
+
+.event-item .event-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 369px;
+    height: 196px;
+}
+
+.event-item {
+    margin: 2px;
+}
+
+.events {
+    vertical-align: top;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caption-contacts {
+    color: #f2fa00;
+}
+
+.contacts {
+    vertical-align: top;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contacts-item {
+    display: inline-block;
+    width: 234px;
+    height: 191px;
+    background-color: #aaaaaa;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+.contacts-item .contacts-header {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #515151;
+    margin-block-end: 0;
+}
+
+.contacts-item p {
+    color: #515151;
+    text-align: center;
+}
+
+.map iframe {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 1px;
+}
+
+@media (max-width: 768px) {
+    .contacts-item {
+        display: block;
+    }
+
+    .event-item {
+        display: block;
+    }
+
+    .comments {
+        max-width: 90%;
+    }
+
+    h2 {
+        margin-top: 110px;
+    }
+
+    .contacts-item:last-of-type,
+    .event-item:last-of-type  {
+        margin-bottom: 100px;
+    }
+
+    .main-content .menu-container div:first-child {
+        margin-bottom: 100px;
+    }
+}

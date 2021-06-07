@@ -16,66 +16,7 @@ header {
     justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-    .header-body {
-        height: 60px;
-    }
 
-    .header-burger {
-        display: block;
-        position: relative;
-        height: 20px;
-        width: 30px;
-        z-index: 5;
-    }
-
-    .header-burger span {
-        position: absolute;
-        left: 0;
-        top: 9px;
-        width: 100%;
-        background-color: #eeeeee;
-        height: 2px;
-    }
-
-    .header-burger::before,
-    .header-burger::after {
-        content: '';
-        background-color: #eeeeee;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-    }
-
-    .header-burger::before {
-        top: 0;
-    }
-
-    .header-burger::after {
-        bottom: 0;
-    }
-    
-    .menu {
-        position: fixed;
-        top: -100%;
-        right: 0;
-        width: 35%;
-        height: 35%;
-        text-align: center;
-        padding: 70px 10px 20px 0;
-    }
-
-    .menu.active {
-        top: 0;
-        height: 35%;
-    }
-
-    .menu-list {
-        display: block;
-    }
-
-}
 
 header::before {
     content: '';
@@ -164,3 +105,118 @@ header::before {
 }
 
 
+@media (max-width: 768px) {
+    header {
+        height: 80px;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    header .container {
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .header-burger {
+        display: block;
+        position: relative;
+        height: 20px;
+        width: 30px;
+        z-index: 5;
+    }
+
+    .header-burger span {
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 100%;
+        background-color: #eeeeee;
+        height: 2px;
+    }
+
+    .header-burger::before,
+    .header-burger::after {
+        content: '';
+        background-color: #eeeeee;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+
+    .header-burger::before {
+        top: 0;
+    }
+
+    .header-burger::after {
+        bottom: 0;
+    }
+    
+    .menu {
+        position: fixed;
+        top: -100%;
+        right: 0;
+        width: 35%;
+        height: 35%;
+        text-align: center;
+    }
+
+    .menu.active {
+        top: 80px;
+        height: 35%;
+    }
+
+    .menu-list {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: -100%;
+        right: 0;
+        height: 35%;
+        width: 25%;
+        text-align: center;
+        background-color: #8b8b8b;
+        transition: all 0.3s ease 0s;
+        box-shadow: 0 0 10px 0 black;
+        z-index: 1;
+    }
+
+    .menu-list li {
+        margin: 0 0 10px 0;
+        
+    }
+
+    .menu-list a {
+        color: black;
+        text-align: center;
+
+    }
+
+    .menu-list {
+        background-color: #8b8b8b;
+        width: 100%;
+        vertical-align: bottom;
+    }
+
+    .header-burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header-burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header-burger.active span {
+        transform: scale(0);
+    }
+}

@@ -169,11 +169,12 @@ header::before {
 
     .menu.active {
         top: 80px;
-        height: 35%;
+        height: 0;
+        display: table;
     }
 
     .menu-list {
-        display: block;
+        display: table;
     }
 
     .menu {
